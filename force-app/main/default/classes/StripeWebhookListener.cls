@@ -196,5 +196,4 @@ global virtual class StripeWebhookListener {
 			System.debug(System.LoggingLevel.INFO, '\n**** Error Inserting Task:'+e); 
 		}
 	}
-
 }

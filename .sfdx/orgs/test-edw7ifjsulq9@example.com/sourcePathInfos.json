@@ -47,16 +47,15 @@
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes",
         {
+            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes",
             "isDirectory": true,
-            "size": 2048,
-            "modifiedTime": 1532536036172,
-            "changeTime": 1532536036172,
-            "contentHash": "6654858e0746506e138b14497822e7e4fa518ea8",
             "isMetadataFile": false,
-            "state": "u",
+            "size": 2112,
+            "modifiedTime": 1532543485640,
+            "changeTime": 1532543485640,
             "isWorkspace": false,
-            "isArtifactRoot": false
+            "contentHash": "9412a431e274c5f89c38cfecfb4ece6493cfb8e6"
         }
     ],
     [
@@ -966,10 +965,10 @@
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects",
             "isDirectory": true,
             "isMetadataFile": false,
-            "size": 96,
-            "modifiedTime": 1532543849173,
-            "changeTime": 1532543849173,
-            "contentHash": "bfe011187222f3dd3d2be2080efcef33e1ebbdf5"
+            "size": 128,
+            "modifiedTime": 1532544024477,
+            "changeTime": 1532544024477,
+            "contentHash": "d728493a0ec84f8f498e0f6740bb8a4758e5abe0"
         }
     ],
     [
@@ -1154,79 +1153,79 @@
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/Stripe_Webhook__c.object-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/Stripe_Webhook__c.object-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 2036,
             "modifiedTime": 1532543849175,
             "changeTime": 1532543849175,
-            "contentHash": "bf6e631b592fa1748846076a914d23c2c482f1f0"
+            "contentHash": "bf6e631b592fa1748846076a914d23c2c482f1f0",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Attempts__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Attempts__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 423,
             "modifiedTime": 1532543849175,
             "changeTime": 1532543849175,
-            "contentHash": "8186d760107614a768b22007401827fb2e1ea903"
+            "contentHash": "8186d760107614a768b22007401827fb2e1ea903",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Status__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Status__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 972,
             "modifiedTime": 1532543849176,
             "changeTime": 1532543849176,
-            "contentHash": "0bd6185c42fd044d8d1ecf8726bc62a11cf23e07"
+            "contentHash": "0bd6185c42fd044d8d1ecf8726bc62a11cf23e07",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Webhook_Data__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Webhook_Data__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 358,
             "modifiedTime": 1532543849176,
             "changeTime": 1532543849176,
-            "contentHash": "949162bab469ca0f7996ee84615f2339063808b3"
+            "contentHash": "949162bab469ca0f7996ee84615f2339063808b3",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Webhook_Type__c.field-meta.xml",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Webhook_Type__c.field-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 368,
             "modifiedTime": 1532543849176,
             "changeTime": 1532543849176,
-            "contentHash": "3b44207c60ad3f029be58b53c5cf01e9b758d48a"
+            "contentHash": "3b44207c60ad3f029be58b53c5cf01e9b758d48a",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 128,
             "modifiedTime": 1532543849175,
             "changeTime": 1532543849175,
-            "contentHash": "552eed5fc20ea472fc33910a2d07f2bd63e5f152"
+            "contentHash": "552eed5fc20ea472fc33910a2d07f2bd63e5f152",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [
@@ -1236,10 +1235,23 @@
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields",
             "isDirectory": true,
             "isMetadataFile": false,
-            "size": 192,
-            "modifiedTime": 1532543849176,
-            "changeTime": 1532543849176,
-            "contentHash": "251ed3529effb0a8f052565f7c85b29e1b3d8716"
+            "size": 224,
+            "modifiedTime": 1532544100975,
+            "changeTime": 1532544100975,
+            "contentHash": "61a3cd2e084c146ba07ab601b706cc302b69bb09"
+        }
+    ],
+    [
+        "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Error_Message__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects/Stripe_Webhook__c/fields/Error_Message__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 372,
+            "modifiedTime": 1532544132427,
+            "changeTime": 1532544132427,
+            "contentHash": "5f8bd4657cef4e839c3f3e2c27e95704dc056ad2"
         }
     ]
 ]
