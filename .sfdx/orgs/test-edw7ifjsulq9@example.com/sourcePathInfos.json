@@ -90,36 +90,6 @@
         }
     ],
     [
-        "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes/StripeAPI.cls",
-        {
-            "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes/StripeAPI.cls",
-            "isDirectory": false,
-            "size": 1696,
-            "modifiedTime": 1532536036177,
-            "changeTime": 1532536036178,
-            "contentHash": "7658d366b96f7abeb43c9e93dc0c6af04cef1b39",
-            "isMetadataFile": false,
-            "state": "n",
-            "isWorkspace": false,
-            "isArtifactRoot": false
-        }
-    ],
-    [
-        "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes/StripeAPI.cls-meta.xml",
-        {
-            "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes/StripeAPI.cls-meta.xml",
-            "isDirectory": false,
-            "size": 174,
-            "modifiedTime": 1532536036176,
-            "changeTime": 1532536036177,
-            "contentHash": "98b9c8b4ae7319e23b2012b692d6b67ad126a3ef",
-            "isMetadataFile": true,
-            "state": "n",
-            "isWorkspace": false,
-            "isArtifactRoot": false
-        }
-    ],
-    [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes/StripeCard.cls",
         {
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/classes/StripeCard.cls",
@@ -992,15 +962,15 @@
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce/force-app/main/default/objects",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 64,
             "modifiedTime": 1532542301595,
             "changeTime": 1532542301595,
-            "isWorkspace": false,
-            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -1171,15 +1141,15 @@
     [
         "/Users/pmcclellan/Documents/GitHub/stripeforce",
         {
-            "state": "u",
             "sourcePath": "/Users/pmcclellan/Documents/GitHub/stripeforce",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 512,
             "modifiedTime": 1532541087508,
             "changeTime": 1532541087508,
-            "isWorkspace": true,
-            "contentHash": "28cafe4f378f0698eb9449f7cb7a5982277efba5"
+            "contentHash": "28cafe4f378f0698eb9449f7cb7a5982277efba5",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": true
         }
     ]
 ]
