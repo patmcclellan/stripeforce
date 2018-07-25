@@ -26,9 +26,9 @@ public class TestStripe {
 		System.assertEquals(false, StripeAPI.isWebhookProcessorRunning());
 		
 		TestStripe.StripeDataSetup();
-		System.assertEquals(false, StripeAPI.isTest());
-		System.assertEquals('xyz', StripeAPI.ApiKey());
-		System.assertEquals('456', StripeAPI.PublishableKey());
+		System.assertEquals(false, StripeAPI.isTest);
+		System.assertEquals('xyz', StripeAPI.ApiKey);
+		System.assertEquals('456', StripeAPI.PublishableKey);
 		System.assertEquals(false, StripeAPI.isWebhookProcessorRunning());
 		
 		Stripe_Settings__c s = Stripe_Settings__c.getOrgDefaults();
