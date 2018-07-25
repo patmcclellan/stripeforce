@@ -23,7 +23,7 @@ global class WebhookListener extends StripeWebhookListener {
 		handle_ChargeSucceeded(charge, true);
 	}
 
-	public void handle_ChargeSucceeded(StripeCharge charge, Boolean allowDelayedProcessing) {
+	public override void handle_ChargeSucceeded(StripeCharge charge, Boolean allowDelayedProcessing) {
 		throw new StripeEvent.UnknownWebhookException('Not implemented');
 	}
 
