@@ -26,18 +26,18 @@ public class TestStripe {
 		System.assertEquals(false, StripeAPI.isWebhookProcessorRunning());
 		
 		TestStripe.StripeDataSetup();
-		System.assertEquals(false, StripeAPI.isTest);
-		System.assertEquals('xyz', StripeAPI.ApiKey);
-		System.assertEquals('456', StripeAPI.PublishableKey);
+		System.assertEquals(false, StripeAPI.isTest());
+		System.assertEquals('xyz', StripeAPI.ApiKey());
+		System.assertEquals('456', StripeAPI.PublishableKey());
 		System.assertEquals(false, StripeAPI.isWebhookProcessorRunning());
 		
 		Stripe_Settings__c s = Stripe_Settings__c.getOrgDefaults();
 		s.Is_Live_Environment__c = false;
 		update s;
 		
-		System.assertEquals(true, StripeAPI.isTest);
-		System.assertEquals('123', StripeAPI.ApiKey);
-		System.assertEquals('def', StripeAPI.PublishableKey);
+		System.assertEquals(true, StripeAPI.isTest());
+		System.assertEquals('123', StripeAPI.ApiKey());
+		System.assertEquals('def', StripeAPI.PublishableKey());
 	}
 		
 	public static void StripeDataSetup() {
