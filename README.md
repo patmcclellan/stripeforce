@@ -1,43 +1,66 @@
-Stripe SDK for Force.com
-========================================
+# SFDX Simple App
 
-[Stripe](http://stripe.com) is a fantastic developer-friendly payment processing platform. This SDK was originally developed by Cirruspath in 2012. Please send comments, pull requests, and questions here on github.
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com/)
 
-Stripe API Documentation
-------------------------
-Read up: https://stripe.com/docs/api
+The Salesforce Developer Experience (SFDX) starts with source code living in your version control system.
 
-Listening for Webhooks
-----------------------
-To implement a listener for Stripe webhooks, start with the ExampleWebhookListener.cls class. This class isn't included in the 'src' directory to help avoid contributors' own webhook implementations from unintentionally gettting committed to this public repo or from being overwritten when they pull in the latest code.
+## Set Up the Salesforce DX Project
 
-Note that not ALL Stripe webhooks are currently supported. However, support for additional webhooks can easily be added to the StripeWebhookListener class. If you make changes to it, please also include the corresponding updates to this webhook implementation class.
+Our first goal is to set up a developer project which we'll use to modify our application. It starts by cloning the repository. Use the command ...
 
-WebhookDelayedProcessor
------------------------
-There is often an "indexing delay" after inserting (or updating) records in Salesforce. If your Webhook implementation relies on finding existing records to complete its task (i.e. searching for the account that corresponds to a new Stripe customer), you may find the WebhookDelayedProcessor job useful. 
+    git clone https://github.com/forcedotcom/sfdx-simple.git
 
-In the example below, after searching for a 'license', we're unable to find one. We check to ensure that delayed processing is allowed (an implementation choice), and we create a `Stripe_Webhook__c` record with the webhook details. A scheduled job will then re-run the appropriate webhook handler up to 3 times, waiting 5 minutes beteween attempts -- adequate time for Salesforce indexing to catch up.
+… or ...
 
-```
-public void handle_ChargeSucceeded(StripeCharge charge, Boolean allowDelayedProcessing) {
-...
-		if (license == null) {
-			if (allowDelayedProcessing) {
-				System.debug(System.LoggingLevel.INFO, '\n**** License Not Found; Delay Webhook Processing'); 
-				Stripe_Webhook__c webhook = new Stripe_Webhook__c(
-					Webhook_Type__c = 'charge.succeeded',
-					Webhook_Data__c = JSON.serializePretty(charge)
-				);
-				insert webhook;
-				return;
-			} 
-				
-			throw new WebhookDelayedProcessor.WebhookDelayedProcessorException();
-		}
-...
-}
+    git clone git@github.com:forcedotcom/sfdx-simple.git
 
-```
+… to clone the repository. Then, open the directory.
 
-Note that delayed processing is currently only implemented for the `charge.succeeded` webhook, but extending the concept to other webhooks (or making it generic) is not difficult.
+    cd sfdx-simple
+    
+## Steps
+
+Authorize to your Developer Hub (Dev Hub) org.
+
+    sfdx force:auth:web:login -d -a "Hub Org"
+
+If you already have an authorized Dev Hub, set it as the default:
+
+    sfdx force:config:set defaultdevhubusername=<username|alias>
+
+Create a scratch org.
+
+    sfdx force:org:create -s -f config/project-scratch-def.json
+
+If you want to use an existing scratch org, set it as the default:
+
+    sfdx force:config:set defaultusername=<username|alias>
+
+Push your source.
+
+    sfdx force:source:push
+
+Run your tests.
+
+    sfdx force:apex:test:run
+    sfdx force:apex:test:report -i <id>
+
+Open the scratch org.
+
+    sfdx force:org:open --path one/one.app
+
+## Resources
+
+For details on using sfdx-simple, please review the [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev).
+
+## Description of Files and Directories  
+
+* **sfdx-project.json**: Required by Salesforce DX. Configures your project.  Use this file to specify the parameters that affect your Salesforce development project.
+* **config/project-scratch-def.json**: Sample file that shows how to define the shape of a scratch org.  You reference this file when you create your scratch org with the force:org:create command.   
+* **force-app**: Directory that contains the source for the sample Force.com app and tests.   
+* **.project**:  Required by the Eclipse IDE.  Describes the Eclipse project. 
+* **.gitignore**:  Optional Git file. Specifies intentionally untracked files that you want Git (or in this case GitHub) to ignore.
+
+## Issues
+
+Please log issues related to this repository [here](https://github.com/forcedotcom/sfdx-simple/issues).
