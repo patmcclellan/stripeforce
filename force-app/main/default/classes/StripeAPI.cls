@@ -45,16 +45,16 @@ global class StripeAPI {
 		return false;
 	}
 	
-	global static void startWebhookProcessor() {
-		if (isWebhookProcessorRunning() == false) {
-			WebhookDelayedProcessor proc = new WebhookDelayedProcessor();
-			Id jobId = System.scheduleBatch(proc, 'delayed webhook processor', 5);
+	// global static void startWebhookProcessor() {
+	// 	if (isWebhookProcessorRunning() == false) {
+	// 		WebhookDelayedProcessor proc = new WebhookDelayedProcessor();
+	// 		Id jobId = System.scheduleBatch(proc, 'delayed webhook processor', 5);
 			
-			Stripe_Settings__c s = Stripe_Settings__c.getOrgDefaults();
-			s.Delayed_Webhook_Processor_ID__c = jobId;
-			update s;
-		}
-	}
+	// 		Stripe_Settings__c s = Stripe_Settings__c.getOrgDefaults();
+	// 		s.Delayed_Webhook_Processor_ID__c = jobId;
+	// 		update s;
+	// 	}
+	// }
 	
 	global static Boolean isTest {
 		get {
