@@ -2,10 +2,8 @@
   "country": "US",
   "edition": "Developer",
   "orgPreferences": {
-    "enabled": [
-      "S1DesktopEnabled"
-    ],
-    "disabled": []
+    "enabled": ["S1DesktopEnabled"],
+    "disabled": ["S1EncryptedStoragePref2"]
   },
   "orgName": "Your Company",
   "adminEmail": "yourname@example.com"
