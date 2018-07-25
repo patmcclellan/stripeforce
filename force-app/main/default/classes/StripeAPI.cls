@@ -65,5 +65,4 @@ global class StripeAPI {
 			return true;
 		}
 	}
-	
 }
