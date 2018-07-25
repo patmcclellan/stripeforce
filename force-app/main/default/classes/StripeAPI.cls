@@ -13,7 +13,7 @@ global class StripeAPI {
 			return null;
 		}
 	}
-
+	
 	global static String PublishableKey {
 		get {
 			Stripe_Settings__c s = Stripe_Settings__c.getInstance();
@@ -65,4 +65,5 @@ global class StripeAPI {
 			return true;
 		}
 	}
+	
 }
